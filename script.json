@@ -1,0 +1,8 @@
+{
+  "name": "mpv-python",
+  "description": "mpv python",
+  "version": "0.1.0",
+  "author": "mpv-ahaoboy",
+  "download": "https://github.com/ahaoboy/mpv-python/releases/latest/download/mpv-python.zip",
+  "homepage": "https://github.com/ahaoboy/mpv-python"
+}
