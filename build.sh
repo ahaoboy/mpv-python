@@ -4,7 +4,7 @@
 set -euo pipefail
 
 # Latest patch release of every supported minor version.
-PY_VERSIONS=(3.12.14 3.13.15 3.14.7)
+PY_VERSIONS=(3.13.15 3.14.7)
 
 BASE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
