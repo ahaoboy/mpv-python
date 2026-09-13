@@ -89,4 +89,12 @@ for ver in "${PY_VERSIONS[@]}"; do
     build "$ver"
 done
 
+# Standalone package: the OSC test script plus its manifest.
+log "Packing mpv-python-test.zip ..."
+for f in mpv-python-test.js mpv-python-test.json; do
+    [[ -f "$BASE/$f" ]] || die "missing: $f"
+done
+rm -f "$BASE/mpv-python-test.zip"
+( cd "$BASE" && zip -q "$BASE/mpv-python-test.zip" mpv-python-test.js mpv-python-test.json )
+
 log "Done: $(printf '%s ' "$BASE"/mpv-python*.zip)"
